@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_aplicacion"
+    tools:context=".UsuarioRegistrado.HipotecasSeguimiento.Graficos.grafico_intereses_capital">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/close_icon_graf_int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/close_icon"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/text_bold"
+        android:textColor="@color/titulo2"
+        android:shadowColor="@color/dark_blue"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Evolución de los intereses y el capital amortizado anual"
+        android:textSize="22sp" />
+
+
+    <com.anychart.AnyChartView
+        android:id="@+id/grafico_intereses_capital"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

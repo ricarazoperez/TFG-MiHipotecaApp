@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_bancos">
+        <item>ING</item>
+        <item>Santander</item>
+        <item>BBVA</item>
+        <item>CaixaBank</item>
+        <item>Bankinter</item>
+        <item>Evo Banco</item>
+        <item>Sabadell</item>
+        <item>Unicaja</item>
+        <item>Deustche Bank</item>
+        <item>Ibercaja</item>
+        <item>Abanca</item>
+
+    </string-array>
+
+</resources>

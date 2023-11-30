@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_aplicacion"
+    tools:context=".SimularHipoteca.CompararNuevaHipoteca">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/close_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/close_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/label_comparador_hipotecas"
+            android:textAlignment="center"
+            android:textSize="42sp"
+            android:fontFamily="@font/text_bold"
+            android:textColor="@color/titulo2"
+            android:shadowColor="@color/dark_blue"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_tipo_de_vivienda"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <Spinner
+            android:id="@+id/sp_tipo_vivienda"
+            android:layout_width="297dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/color_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="@string/label_combobox_comunidad"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_tipo_vivienda" />
+
+        <Spinner
+            android:id="@+id/sp_comunidad_comparador"
+            android:layout_width="297dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/text_color"
+            android:backgroundTint="@color/color_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="@string/label_viv_nueva_seg_mano"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_comunidad_comparador" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <CheckBox
+                android:id="@+id/checkBox_vivienda_nueva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/grey_color"
+                android:checked="true"
+                android:text="@string/label_viv_nueva" />
+
+            <CheckBox
+                android:id="@+id/checkBox_vivienda_seg_mano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/grey_color"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="@string/label_viv_seg_mano" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/label_precio_vivienda"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <EditText
+            android:id="@+id/edit_precio_vivienda_comp"
+            android:layout_width="300dp"
+            android:layout_height="48sp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:hint="Ej: 100.000 "
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:inputType="number|numberDecimal"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/label_cantidad_abonada"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="32dp"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/edit_precio_vivienda_comp" />
+
+        <EditText
+            android:id="@+id/edit_cant_abonada_comp"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:hint="Ej: 30.000 "
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:text="@string/label_plazo_prestamo_a_pagar"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_plazo_pagar_comp"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:layout_marginTop="10dp"
+            android:hint="Ej: 30 "
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="32dp"
+            android:text="@string/label_ingresos"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_ingresos_mensuales"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:layout_marginTop="10dp"
+            android:hint="Ej: 2.000 "
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:text="" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+            <Switch
+                android:id="@+id/switch_detalle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/text_color"
+                android:layout_height="wrap_content"
+                android:text="@string/label_ofertas_con_detalle"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="32dp"
+            android:id="@+id/btn_comparar_hipoteca"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btn_bordes_redondos"
+            android:text="@string/txt_btn_comparar_hipoteca"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mis_hipotecas"
+        android:icon="@drawable/mis_hipotecas_icono"
+        android:title="" />
+    <item
+        android:id="@+id/aniadir_hipoteca"
+        android:icon="@drawable/aniadir_hipo__icono"
+        android:title="" />
+    <item
+        android:id="@+id/comparar_hipoteca"
+        android:icon="@drawable/calcular_hipo__icono"
+        android:title="" />
+    <item
+        android:id="@+id/mi_perfil"
+        android:icon="@drawable/mi_perfil__icono"
+        android:title=""/>
+</menu>

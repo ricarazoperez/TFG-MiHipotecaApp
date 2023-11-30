@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecuperarContra"
+    android:background="@color/background_aplicacion">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/text_bold"
+        android:textColor="@color/titulo2"
+        android:shadowColor="@color/dark_blue"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
+        android:text="@string/label_recuperar_contrasenia_titulo"
+        android:layout_marginBottom="28dp"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/allerta"
+        android:scaleType="centerCrop"
+        android:text="@string/label_indicar_correo_recuperar_contra"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/text_color" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_correo_recuperar_contra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/text_bold"
+            android:hint="@string/label_correo_electronico"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_recuperar_contrasenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_bordes_redondos"
+        android:fontFamily="@font/text_bold"
+        android:text="@string/txt_btn_recuperar_contrasenia" />
+
+
+</LinearLayout>

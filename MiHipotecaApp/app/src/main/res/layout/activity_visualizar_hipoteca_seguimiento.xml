@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_aplicacion"
+    tools:context=".UsuarioRegistrado.HipotecasSeguimiento.VisualizarHipotecaSeguimiento">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:layout_marginStart="35dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                    android:id="@+id/titulo_seguimiento_hipoteca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/text_bold"
+                    android:textColor="@color/titulo2"
+                    android:shadowColor="@color/dark_blue"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="3"                      android:gravity="center"
+                    android:text="@string/label_seguimiento"
+                    android:textSize="36sp"
+                    android:visibility="invisible"/>
+
+                    <TextView
+                    android:id="@+id/nombre_seguimiento_hipoteca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/text_bold"
+                    android:textColor="@color/titulo2"
+                    android:shadowColor="@color/dark_blue"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="3"                      android:gravity="center"
+                    android:text="Titulo"
+                    android:textSize="35sp"
+                    android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/close_icon_seguimiento"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/close_icon" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/txt_tipo_hipoteca_seguimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:text="@string/label_tipo_de_hipoteca"
+                android:textSize="22sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tipo_hipoteca_seguimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:text="Fija"
+                android:textSize="22sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_banco_hipoteca"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/allerta"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color"
+                android:text="Banco:"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/logo_banco_seg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/logo_ing"
+                android:background="@drawable/btn_bordes_redondos3"
+                android:layout_marginBottom="12dp"
+                android:paddingHorizontal="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar_visualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_com_autonoma_hipoteca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/allerta"
+                    android:layout_weight="1"
+                    android:text="Comunidad Autónoma:"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+                <TextView
+                    android:id="@+id/txt_dinero_falta_pagar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/allerta"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="@color/text_color"
+                    android:text="@string/label_dinero_que_falta_por_pagar"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+                <TextView
+                    android:id="@+id/txt_tiempo_restante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/allerta"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/text_color"
+                    android:text="@string/label_tiempo_restante"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/comunidad_autonoma_seg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/allerta"
+                    android:layout_marginStart="8dp"
+                    android:text="Madrid"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="14dp"
+                    >
+                    <TextView
+                        android:id="@+id/label_cantidad_pendiente_seguimiento_hip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:textColor="@color/text_color"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:text="150000"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="6dp"
+                        android:textSize="16sp"
+                        android:visibility="invisible"/>
+                    <ImageButton
+                        android:id="@+id/btn_info_dinero_por_pagar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/info"
+                        android:background="@null"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/label_anios_restantes_seguimiento_hip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/allerta"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/text_color"
+                    android:text="20 años"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_cuadro_amortizacion"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bordes_redondos"
+                android:layout_marginHorizontal="5dp"
+                android:textSize="12sp"
+                android:text="@string/txt_btn_cuadro_amortizacion"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btn_amortizar_antes"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:textSize="12sp"
+                android:background="@drawable/btn_bordes_redondos"
+                android:text="@string/txt_btn_amortizar_antes"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_cuota_de"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:text="@string/label_cuota_de"
+            android:textSize="22sp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/nombre_mes_actual_seguimiento_hip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:text="Enero"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/layout_info_cuota_hip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/btn_bordes_redondos"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:id="@+id/layout_cuota_seguimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+                <TextView
+                    android:id="@+id/cuota_mensual_seguimiento_hip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/allerta"
+                    android:textColor="@color/text_color"
+                    android:gravity="center"
+                    android:text="Cuota: "
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/cuota_mensual_seguimiento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500€"
+                    android:fontFamily="@font/allerta"
+                    android:textColor="@color/text_color"
+                    android:gravity="center"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/btn_info_cuota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/info"
+                    android:background="@null"/>
+
+             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_porcentaje_aplicado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/porcentaje"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/porcentaje_aplicado_valor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.5%"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/allerta"
+                    android:textColor="@color/text_color"
+                    android:gravity="center"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_amortizacion_anticipada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/allerta"
+                    android:textColor="@color/text_color"
+                    android:gravity="center"
+                    android:text="Amort Anticipada: "
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/amortizacion_anticipada_valor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="0€"
+                    android:fontFamily="@font/allerta"
+                    android:textColor="@color/text_color"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/btn_borrar_amort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="@null"
+                    android:src="@drawable/basura" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_capital_intereses1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/allerta"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:text="Capital"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/allerta"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:text="Intereses"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_capital_intereses2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+                    android:id="@+id/capital_cuota_mensual_hip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/allerta"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:text="250€"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/intereses_cuota_mensual_hip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/allerta"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:text="250€"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/numero_cuota_actual_hip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:text="Cuotas pagadas:  "
+                android:textSize="22sp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_btns_graficos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:background="@drawable/btn_bordes_redondos2"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageButton
+                    android:id="@+id/btn_grafico_gastos_totales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pie_chart"
+                    android:background="@null"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/allerta"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/text_color"
+                    android:text="Gastos Totales"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageButton
+                    android:id="@+id/btn_grafico_intereses_capital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/line_graph"
+                    android:background="@null"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/allerta"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginEnd="10dp"                    android:textColor="@color/text_color"
+                    android:text="Intereses vs Amortizado"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titulo_grafico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/allerta"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Aportado vs a financiar"
+            android:textSize="22sp"
+            android:visibility="invisible"/>
+
+
+        <com.anychart.AnyChartView
+            android:id="@+id/grafico_seguimiento"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/texto_si_no_premium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/allerta"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="No puedes ver el gráfico hasta que no seas usuario premium"
+            android:textSize="22sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/tabla_valores_grafico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp">
+
+            <!-- Línea horizontal -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:id="@+id/info_grafico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Línea vertical -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+
+                <!-- Primer cuadrante -->
+                <LinearLayout
+                    android:id="@+id/first_quadrant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Contenido del primer cuadrante aquí -->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:text="Capital Amortizado"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/capital_amortizado_seguimiento_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:text="0€"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <!-- Línea vertical -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+
+                <!-- Segundo cuadrante -->
+                <LinearLayout
+                    android:id="@+id/second_quadrant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Contenido del segundo cuadrante aquí -->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:text="Capital Pendiente"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/capital_pendiente_seguimiento_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:text="5.000€"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <!-- Línea vertical -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+
+            <!-- Línea horizontal -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- Línea vertical -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"/>
+
+                <!-- Tercer cuadrante -->
+                <LinearLayout
+                    android:id="@+id/third_quadrant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Contenido del tercer cuadrante aquí -->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:text="Intereses Pagados"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/intereses_pagados_seguimiento_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:text="0€"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <!-- Línea vertical -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+
+                <!-- Cuarto cuadrante -->
+                <LinearLayout
+                    android:id="@+id/fourth_quadrant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Contenido del cuarto cuadrante aquí -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:text="Intereses Pendiente"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/intereses_pendientes_seguimiento_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:text="5.000€"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <!-- Línea vertical -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+
+            <!-- Línea horizontal -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/barra_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:text="Amortizaciones anticipadas realizadas"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_no_amortizaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:text="No hay amortizaciones anticipadas"
+            android:textSize="18sp" />
+        
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbHorizontal="@color/gris_oscuro"
+            android:layout_marginBottom="20dp">
+
+            <TableLayout
+                android:id="@+id/tabla_seg_amortizacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:stretchColumns="*"
+                android:background="@color/white"
+                android:visibility="invisible">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:text="Nº Cuota"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:padding="7dp"
+                        android:text="Tipo"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:padding="10dp"
+                        android:text="Capital amortizado"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:text="Meses reducidos"
+                        android:textAlignment="center"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:text="Comisión Total"
+                        android:textAlignment="center"
+                        android:padding="10dp"/>
+
+                </TableRow>
+
+            </TableLayout>
+        </HorizontalScrollView>
+        
+
+
+    </LinearLayout>
+
+</ScrollView>

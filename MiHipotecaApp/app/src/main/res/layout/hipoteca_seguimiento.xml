@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_gravity="center"
+    android:elevation="10dp"
+    android:background="@drawable/layout_shadow"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo_banco_tarjeta"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:background="@color/titulo"
+                android:src="@drawable/logo_ing"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo_tarjeta_hipoteca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título de la cardview"
+                android:textColor="@color/titulo2"
+                android:fontFamily="@font/text_bold"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/tipo_hipoteca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hipoteca Fija"
+                android:fontFamily="@font/text_bold"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+<!--
+        <LinearLayout
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@drawable/btn_bordes_redondos2">
+
+            <ImageView
+                android:id="@+id/logo_banco_tarjeta"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/logo_ing"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="15dp"
+                android:paddingHorizontal="15dp">
+
+                <TextView
+                    android:id="@+id/titulo_tarjeta_hipoteca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Título de la cardview"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/cuotas_restantes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="33/300"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+
+                <GridLayout
+                    android:id="@+id/grid_info_hip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="2"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_bordes_redondos3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pagado"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pendiente"
+                        android:layout_gravity="center"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/dinero_pagado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 1"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="10dp"/>
+
+                    <TextView
+                        android:id="@+id/dinero_pendiente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 2"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        />
+
+
+                </GridLayout>
+
+
+                <TextView
+                    android:id="@+id/tipo_hipoteca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hipoteca Fija"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/star_hip"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hipoteca_icono"/>
+
+        </LinearLayout>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/purple_700"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foto_tarjeta_hipoteca"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hipoteca_icono"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/titulo_tarjeta_hipoteca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ejemplo"
+                android:textStyle="bold"
+                android:fontFamily="@font/allerta"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>-->
+    -->
+
+</LinearLayout>
+

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MiHipotecaApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".TerminosCondiciones"
+            android:exported="false" />
+        <activity
+            android:name=".UsuarioRegistrado.BlogActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.HipotecasSeguimiento.TusOfertas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.InformacionUsuario.PoliticaPrivacidad"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.InformacionUsuario.AcercaDe"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SimularHipoteca.MostrarOfertas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.HipotecasSeguimiento.AmortizarAntes"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.HipotecasSeguimiento.Graficos.grafico_intereses_capital"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.HipotecasSeguimiento.Graficos.grafico_gastos_totales"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.HipotecasSeguimiento.custom_dialog_anios"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.HipotecasSeguimiento.Cuadro_amortizacion"
+            android:exported="false" />
+        <activity
+            android:name=".UsuarioRegistrado.HipotecasSeguimiento.VisualizarHipotecaSeguimiento"
+            android:exported="false" />
+        <activity
+            android:name=".SimularHipoteca.CompararNuevaHipoteca"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaginaPrincipal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecuperarContra"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.InformacionUsuario.PasarPremium"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SimularHipoteca.Filtros"
+            android:exported="false" />
+        <activity
+            android:name=".UsuarioRegistrado.InformacionUsuario.InformarDeUnProblema"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.HipotecasSeguimiento.NuevoSeguimiento"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.HipotecasSeguimiento.EditarHipotecaSeguimiento"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.InformacionUsuario.ModificarDatosUsuario"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsuarioRegistrado.InformacionUsuario.InfoPerfilUsuario"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registro"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IniciarSesion"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

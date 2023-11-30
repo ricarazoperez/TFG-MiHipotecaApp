@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ver_hipoteca"
+        android:title="Ver hipoteca" />
+    <item
+        android:id="@+id/editar_hipoteca"
+        android:title="Editar" />
+    <item
+        android:id="@+id/eliminar_hipoteca"
+        android:title="Eliminar" />
+</menu>

@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_aplicacion"
+    tools:context=".UsuarioRegistrado.HipotecasSeguimiento.NuevoSeguimiento">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/close_icon_seg_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/close_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_edit_hipoteca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/text_bold"
+            android:textColor="@color/titulo2"
+            android:shadowColor="@color/dark_blue"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:gravity="center"
+            android:text="Editar hipoteca"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/txt_edit_comunidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/text_color"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="Comunidad autónoma: Madrid"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_banco"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/text_color"
+
+            android:layout_marginTop="24dp"/>
+        <Spinner
+            android:id="@+id/sp_banco_nuevo_seg_edit"
+            android:layout_width="297dp"
+            android:layout_height="48dp"
+            android:textColor="@color/text_color"
+            android:backgroundTint="@color/color_btn"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_edit_tipo_vivienda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:text="Tipo de vivienda: protección oficial"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txt_edit_antiguedad_vivienda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color"
+            android:textAlignment="center"
+            android:text="Estado de la vivienda: Vivienda nueva"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txt_edit_precio_vivienda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/text_color"
+            android:text="Precio de la vivienda: 200.000€"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_edit_cant_abonada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color"
+            android:layout_marginStart="15dp"
+            android:text="Cantidad abonada: 50.000€"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_edit_plazo_hip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="20dp"
+            android:text="Plazo hipoteca: 25 años"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txt_edit_inicio_hip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Fecha de incio: 23/02/2023"
+            android:textColor="@color/text_color"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_edit_tipo_hip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="20dp"
+            android:text="Tipo de hipoteca: fija"
+            android:textSize="20dp" />
+
+
+        <!-- CAMPOS PARA HIPOTECA FIJA -->
+
+        <TextView
+            android:id="@+id/label_porcentaje_fijo_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_porcentaje_fijo"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            android:textSize="16sp"/>
+
+        <EditText
+
+            android:id="@+id/edit_porcentaje_fijo_edit"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:textColor="@color/black"
+            android:hint="Ej: 2,7 %"
+            android:inputType="numberDecimal"
+            android:visibility="visible"
+            android:text="" />
+
+        <!-- FIN CAMPOS PARA HIPOTECA FIJA -->
+
+        <!-- CAMPOS PARA HIPOTECA VARIABLE -->
+
+        <CheckBox
+            android:id="@+id/check_parte_fija_variable_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/label_check_parte_fija_mixta"
+            android:checked="false"/>
+
+        <TextView
+            android:id="@+id/label_duracion_primer_porcentaje_variable_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_duracion_primer_porcentaje"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:textSize="16sp"/>
+
+        <EditText
+
+            android:id="@+id/edit_duracion_primer_porcentaje_variable_edit"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:layout_marginStart="16dp"
+            android:hint="Duración en meses"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:visibility="gone"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/label_primer_porcentaje_variable_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_primer_porcentaje_variable"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:textSize="16sp"/>
+
+        <EditText
+
+            android:id="@+id/edit_primer_porcentaje_variable_edit"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:hint="Primer porcentaje"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/label_diferencial_variable_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_porcentaje_variable_diferencial"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:textSize="16sp"/>
+
+        <EditText
+
+            android:id="@+id/edit_porcentaje_diferencial_variable_edit"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:layout_marginStart="16dp"
+            android:hint="Diferencial"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/label_cada_cuanto_revision_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:visibility="gone"
+            android:text="@string/label_cada_cuanto_revision"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_revision_seis_meses_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_marginStart="48dp"
+            android:visibility="gone"
+            android:text="@string/label_seis_meses"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_revision_un_anio_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginStart="48dp"
+            android:visibility="gone"
+            android:text="@string/label_un_anio" />
+
+        <!-- FIN CAMPOS PARA HIPOTECA FIJA -->
+
+        <!-- CAMPOS PARA HIPOTECA MIXTA -->
+
+        <TextView
+            android:id="@+id/label_cuantos_anios_fijo_mixta_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:textColor="@color/text_color"
+            android:text="@string/label_cuantos_anios_fijo"
+            android:textSize="20sp"/>
+
+        <EditText
+
+            android:id="@+id/edit_anios_fijos_mixta_edit"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:layout_marginStart="16dp"
+            android:hint="Años fijos"
+            android:inputType="number"
+            android:visibility="gone"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/label_porcentaje_fijo_mixta_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_porcentaje_fijo"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color"
+            android:visibility="gone"
+            android:textSize="16sp"/>
+
+        <EditText
+
+            android:id="@+id/edit_porcentaje_fijo_mixta_edit"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:hint="Porcentaje fijo"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/label_diferencial_mixta_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_porcentaje_variable_diferencial"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color"
+            android:visibility="gone"
+            android:textSize="16sp"/>
+
+        <EditText
+
+            android:id="@+id/edit_porcentaje_diferencial_mixta_edit"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:hint="Diferencial"
+            android:inputType="numberDecimal"
+            android:visibility="gone"
+            android:text=""/>
+
+        <!-- FIN CAMPOS PARA HIPOTECA MIXTA
+             ACORDARSE DE PONER A VISIBLE TAMBIÉN CADA
+             CUANTO REVISION-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_gastos_totales"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <EditText
+
+            android:id="@+id/edit_gastos_totales_edit"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:inputType="numberDecimal"
+            android:text="0" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_gastos_vinculaciones"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="30dp">
+
+            <ImageButton
+                android:id="@+id/btn_info_vinculaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@null"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/edit_anio_vinculacion"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_edit_text"
+                android:fontFamily="@font/allerta"
+                android:inputType="number"
+                android:hint="  Año: 1, 2, 3, ..." />
+
+            <EditText
+                android:id="@+id/edit_dinero_vinculacion"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="3"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_edit_text"
+                android:fontFamily="@font/allerta"
+                android:layout_marginStart="16dp"
+                android:inputType="numberDecimal"
+                android:hint="Cantidad (€)" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_nombre_hipoteca"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"/>
+
+
+        <EditText
+
+            android:id="@+id/edit_nombre_hipoteca_edit"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/allerta"
+            android:inputType="text"
+            android:maxLength="20"
+            android:text="" />
+
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_editar_hipoteca"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_bordes_redondos"
+            android:text="@string/txt_btn_editar_hipoteca"/>
+
+    </LinearLayout>
+</ScrollView>

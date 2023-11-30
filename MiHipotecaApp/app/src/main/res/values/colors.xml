@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="purple_200">#76CADF</color>
+    <color name="purple_500">#32B7D9</color>
+    <color name="purple_700">#268CA6</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_aplicacion">#D2F5FF</color>
+    <color name="background_bottom_bar">#ABE6F0</color>
+    <color name="color_btn">#6096B4</color>
+    <color name="color_intermedio">#EEE9DA</color>
+    <color name="gris_oscuro">#4F4F4F</color>
+    <color name="titulo">#001A7A</color>-->
+
+    <color name="background_aplicacion">#101313</color>
+    <color name="background_bottom_bar">#2F3333</color>
+    <color name="color_btn">#316CB3</color>
+    <color name="purple_200">#2F3333</color>
+    <color name="dark_blue">#316CB3</color>
+    <color name="picked_button">#12345C</color>
+    <color name="purple_700">#2F3333</color>
+    <color name="teal_200">#316CB3</color>
+    <color name="teal_700">#316CB3</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_intermedio">#EEE9DA</color>
+    <color name="gris_oscuro">#316CB3</color>
+    <color name="titulo">#FFFFFFFF</color>
+    <color name="titulo2">#316CB3</color>
+    <color name="card_color">#2F3333</color>
+    <color name="text_color">#FFFFFFFF</color>
+    <color name="red_color">#A30606</color>
+    <color name="grey_color">#918F8F</color>
+
+
+</resources>

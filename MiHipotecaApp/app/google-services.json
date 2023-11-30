@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "223147588166",
+    "project_id": "mihipotecaapp-4b30a",
+    "storage_bucket": "mihipotecaapp-4b30a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223147588166:android:bd8b297893283d78a46847",
+        "android_client_info": {
+          "package_name": "es.MiHipotecaApp.TFG"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223147588166-d7iopq7msmel4htb5j2jvhf6sq223luv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "es.MiHipotecaApp.TFG",
+            "certificate_hash": "53fe1f14ba637b009f6d232e034afd4d84ef81e0"
+          }
+        },
+        {
+          "client_id": "223147588166-epfofpkcefam68q80hdvfr385embeuht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI-sBlg-CHjo8_YWlh82WHt_Qb5b3E69E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223147588166-epfofpkcefam68q80hdvfr385embeuht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

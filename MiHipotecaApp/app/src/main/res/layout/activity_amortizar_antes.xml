@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_aplicacion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/close_icon_amort_ant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/close_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/text_bold"
+            android:textColor="@color/titulo2"
+            android:shadowColor="@color/dark_blue"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"            android:gravity="center"
+            android:text="Amortización anticipada de:"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/nombre_amort_anticipada_hip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/text_bold"
+            android:textColor="@color/titulo2"
+            android:shadowColor="@color/dark_blue"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:gravity="center"
+            android:text="Titulo"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_comision_anticipada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/text_color"
+                android:checked="false"
+                android:text="¿Comisión?" />
+
+            <EditText
+                android:id="@+id/edit_porcentaje_comision_ant"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/rounded_edit_text2"
+                android:fontFamily="@font/allerta"
+                android:hint="%"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:inputType="number|numberDecimal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_amort_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:checked="true"
+                android:text="Amortización total" />
+
+            <CheckBox
+                android:id="@+id/check_amort_parcial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:checked="false"
+                android:text="Amortización Parcial" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/label_info_amort_parcial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/allerta"
+            android:text="En función de:"
+            android:visibility="gone"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_amort_parcial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_reducir_cuota"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textColor="@color/text_color"
+                android:text="Reducir cuota" />
+
+            <CheckBox
+                android:id="@+id/check_reducir_plazo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textColor="@color/text_color"
+                android:text="Reducir plazo" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_reducir_cuota"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/allerta"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:text="Dinero a amortizar"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_dinero_amort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edit_text2"
+                        android:fontFamily="@font/allerta"
+                        android:hint="     € "
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:inputType="number|numberDecimal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/btn_info_dinero_amort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:src="@drawable/info" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_reducir_plazo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/allerta"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:text="Reducción de plazo"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_reduccion_plazo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edit_text2"
+                        android:fontFamily="@font/allerta"
+                        android:hint="     € "
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:inputType="number|numberDecimal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                    <ImageButton
+                        android:id="@+id/btn_info_reduccion_plazo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:src="@drawable/info" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_amort_anticipada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_bordes_redondos"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_cantidad_amortizado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:text="Cantidad a amortizar: 5000€"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_capital_pendiente_amort_antiguo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:text="Capital pdte anterior: 5000€"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_capital_pendiente_amort_nuevo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Capital pdte nuevo: 5000€"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_cuotavsnueva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_cuota_plazo_antigua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:text="Cuota antigua"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cuota_plazo_nueva"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Cuota nueva"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_cuota_plazo_antigua_valor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_weight="1"
+                        android:textColor="@color/text_color"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cuota_plazo_nueva_valor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/allerta"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_comision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Comisión: 0€"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_realizar_amortizacion_anticipada"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bordes_redondos"
+            android:layout_marginBottom="20dp"
+            android:text="@string/txt_btn_amortizar_antes"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

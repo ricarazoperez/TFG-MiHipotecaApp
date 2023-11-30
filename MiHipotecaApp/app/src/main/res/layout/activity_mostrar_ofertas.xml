@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_aplicacion"
+    tools:context=".SimularHipoteca.MostrarOfertas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/text_bold"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/titulo2"
+            android:shadowColor="@color/dark_blue"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:text="Ofertas"
+            android:textSize="28dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/close_icon_comparar_hip"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/close_icon"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/buttonFijas"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Fijas"
+            android:fontFamily="@font/text_bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/buttonVariablesMixta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:fontFamily="@font/text_bold"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_background"
+            android:text="Variables/Mixta"
+            android:textSize="12dp"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/txt_filtrarBancos"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/text_bold"
+                android:text="Filtrar por bancos"
+                android:textColor="@color/text_color"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+            <Switch
+                android:id="@+id/switchBusqueda"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+            <Spinner
+                android:id="@+id/sp_bancos"
+                android:layout_width="175dp"
+                android:backgroundTint="@color/color_btn"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="15dp"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_ordernar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Ordenar por"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/text_bold"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:visibility="invisible"/>
+        <Button
+            android:id="@+id/btn_ordenarTae"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="TAE"
+            android:visibility="invisible"/>
+        <Button
+            android:id="@+id/btn_ordenarCuota"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:visibility="invisible"
+            android:text="CUOTA"/>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvEspera"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        android:text="Esto podria llevar unos segundos..." />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOfertas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

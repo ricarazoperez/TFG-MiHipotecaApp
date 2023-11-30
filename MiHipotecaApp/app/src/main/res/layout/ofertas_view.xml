@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_color"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgItem"
+                android:background="@color/text_color"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_guardar"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:text="Guardar"
+                    android:fontFamily="@font/text_bold"
+                    android:textColor="@color/titulo2"
+                    android:textSize="12dp"
+                    style="?android:attr/buttonBarButtonStyle"
+
+                    />
+                <Button
+                    android:id="@+id/btn_eliminar"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:text="Eliminar"
+                    android:fontFamily="@font/text_bold"
+                    android:textColor="@color/red_color"
+                    android:textSize="12dp"
+                    style="?android:attr/buttonBarButtonStyle"
+                    />
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    >
+                    <TextView
+                        android:id="@+id/tvBanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/titulo2"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/txt_detalles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:fontFamily="@font/text_bold"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:text="Más detalles"/>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnArrow"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/more_details_line"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tvTae"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_color"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/tvTin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/tvTin_resto"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/text_color"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/txt_cuota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:text="@string/label_cuota"
+                        android:textStyle="bold"
+                        android:textColor="@color/titulo2"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/tvCuota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:id="@+id/tvCuota_resto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

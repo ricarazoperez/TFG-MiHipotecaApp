@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- NOMBRE APP -->
+    <string name="app_name">Mi Hipoteca App</string>
+
+    <!-- BOTONES -->
+    <string name="txt_btn_simular_hipoteca">SIMULAR HIPOTECA</string>
+    <string name="txt_btn_iniciar_sesion">INICIAR SESIÓN</string>
+    <string name="txt_btn_registrarse">REGISTRARSE</string>
+    <string name="txt_btn_aplicar_cambios">APLICAR CAMBIOS</string>
+    <string name="txt_btn_pasar_a_premium">PASAR A PREMIUM</string>
+    <string name="txt_btn_añadir_hipoteca">AÑADIR HIPOTECA</string>
+
+
+    <!-- LABELS -->
+    <string name="label_correo_electronico">Correo Eléctronico</string>
+    <string name="label_ejemplo_correo">ejemplo@email.com</string>
+    <string name="label_contrasenia">Contraseña</string>
+    <string name="label_contrasenia_nueva">Contraseña nueva</string>
+    <string name="label_ejemplo_contrasenia">************</string>
+    <string name="label_recuperar_contrasenia">Recuperar contraseña</string>
+    <string name="label_no_tienes_cuenta">¿No tienes cuenta? Regístrate aquí</string>
+    <string name="label_registro">Registro</string>
+    <string name="label_datos_de_acceso">Datos de acceso</string>
+    <string name="label_nombre">Nombre</string>
+    <string name="label_repetir_contrasenia">Repetir contraseña</string>
+    <string name="label_repetir_contrasenia_nueva">Repetir contraseña nueva</string>
+    <string name="label_acepto_terminos">Acepto los términos y condiciones</string>
+    <string name="label_selecciona_avatar">Escoge un avatar</string>
+    <string name="titulo_actividad_principal">TUS HIPOTECAS</string>
+    <string name="label_configuracion_usuario">Perfil y ajustes</string>
+    <string name="label_notificar_problema">Notificar problema</string>
+    <string name="label_cambiar_datos">Modificar perfil</string>
+    <string name="label_pasar_premium">Pasar a premium</string>
+    <string name="label_acercaDe">Acerca de</string>
+    <string name="label_terminos_de_uso">Términos de uso</string>
+    <string name="label_pol_privacidad">Pol. de privacidad</string>
+    <string name="label_modificar_perfil">Modificar Perfil</string>
+    <string name="label_nuevo_seguimiento">Nuevo seguimiento</string>
+    <string name="label_combobox_comunidad">¿En que comunidad autónoma se encuentra?</string>
+    <string name="label_tipo_vivienda">¿Vivienda nueva o de segunda mano?</string>
+    <string name="label_vivienda_nueva">Vivienda nueva</string>
+    <string name="label_vivienda_segunda_mano">Vivienda de segunda mano</string>
+    <string name="label_precio_vivienda">¿Precio de la vivienda?</string>
+    <string name="label_cantidad_abonada">¿Cantidad abonada por el comprador?</string>
+    <string name="label_plazo_prestamo_a_pagar">¿Plazo a pagar de préstamo?</string>
+    <string name="label_año_hipoteca_actual">¿Año de hipoteca actual?</string>
+
+
+    <!-- MENSAJES DE ERROR -->
+    <string name="correo_en_bd">El correo introducido ya está registrado</string>
+    <string name="necesario_aceptar_terminos">Acepta los términos y condiciones para poder registrarte</string>
+    <string name="nombre_vacio">Es necesario introducir un nombre</string>
+    <string name="correo_vacio">Es necesario introducir un correo eléctronico</string>
+    <string name="contra_vacia">Es necesario introducir una contraseña</string>
+    <string name="contras_no_coinciden">Las contraseñas no coinciden</string>
+    <string name="correo_no_existente">El correo introducido no está registrado</string>
+    <string name="correo_incorrecto">El correo introducido no es correcto</string>
+    <string name="contra_incorrecta">La contraseña es incorrecta</string>
+
+    <!-- PRIMER EJEMPLO MORALES -->
+    <string name="txt_correo">Correo</string>
+    <string name="txt_pass">Contraseña</string>
+    <string name="txt_text">Hola</string>
+</resources>

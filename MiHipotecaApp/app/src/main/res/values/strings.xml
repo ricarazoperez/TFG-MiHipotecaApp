@@ -1,0 +1,241 @@
+<resources>
+
+    <!-- NOMBRE APP -->
+    <string name="app_name">MiHipoteca App</string>
+
+    <!-- BOTONES -->
+    <string name="txt_btn_simular_hipoteca">COMPARAR HIPOTECAS</string>
+    <string name="txt_btn_iniciar_sesion">INICIAR SESIÓN</string>
+    <string name="txt_btn_registrarse">REGISTRARSE</string>
+    <string name="txt_btn_aplicar_cambios">APLICAR CAMBIOS</string>
+    <string name="txt_btn_pasar_a_premium">PASAR A PREMIUM</string>
+    <string name="txt_btn_añadir_hipoteca">AÑADIR HIPOTECA</string>
+    <string name="txt_btn_editar_hipoteca">EDITAR HIPOTECA</string>
+    <string name="txt_btn_enviar_problema">ENVIAR</string>
+    <string name="txt_aplicar_filtro">Aplicar filtros</string>
+    <string name="txt_btn_recuperar_contrasenia">RECUPERAR CONTRASEÑA</string>
+    <string name="txt_btn_comparar_hipoteca">COMPARAR HIPOTECA</string>
+    <string name="txt_btn_cuadro_amortizacion">CUADRO DE AMORTIZACIÓN</string>
+    <string name="txt_btn_amortizar_antes">AMORTIZAR ANTES</string>
+
+    <!-- LABELS -->
+    <string name="label_correo_electronico">Correo electrónico</string>
+    <string name="label_ejemplo_correo">ejemplo@email.com</string>
+    <string name="label_contrasenia">Contraseña</string>
+    <string name="label_contrasenia_nueva">Contraseña nueva</string>
+    <string name="label_ejemplo_contrasenia">************</string>
+    <string name="label_recuperar_contrasenia"><u><b>Recuperar contraseña</b></u></string>
+    <string name="label_recuperar_contrasenia_titulo">Recuperar contraseña</string>
+    <string name="label_no_tienes_cuenta">¿No tienes cuenta? <u><b>Regístrate aquí</b></u></string>
+    <string name="label_registro">Registro</string>
+    <string name="label_datos_de_acceso">Datos de acceso</string>
+    <string name="label_nombre">Nombre</string>
+    <string name="label_repetir_contrasenia">Repetir contraseña</string>
+    <string name="label_repetir_contrasenia_nueva">Repetir contraseña nueva</string>
+    <string name="label_acepto_terminos">Acepto los términos y condiciones</string>
+    <string name="label_selecciona_avatar">Escoge un avatar</string>
+    <string name="titulo_actividad_principal">Mis hipotecas</string>
+    <string name="label_configuracion_usuario">Perfil y ajustes</string>
+    <string name="label_notificar_problema">Notificar problema</string>
+    <string name="label_cambiar_datos">Modificar perfil</string>
+    <string name="label_pasar_premium">Pasar a premium</string>
+    <string name="label_acercaDe">Acerca de</string>
+    <string name="label_pol_privacidad">Pol. de privacidad</string>
+    <string name="label_eliminar_usuario">Eliminar cuenta</string>
+    <string name="label_modificar_perfil">Modificar perfil</string>
+    <string name="label_nuevo_seguimiento">Nuevo \n seguimiento</string>
+    <string name="label_combobox_comunidad">¿En qué provincia se encuentra?</string>
+    <string name="label_tipo_vivienda">¿Vivienda de régimen general o de protección oficial?</string>
+    <string name="label_antiguedad_vivienda">¿Vivienda nueva o de segunda mano?</string>
+    <string name="label_vivienda_nueva">Vivienda nueva</string>
+    <string name="label_vivienda_segunda_mano">Vivienda de segunda mano</string>
+    <string name="label_vivienda_regimen_general">Vivienda régimen general</string>
+    <string name="label_vivienda_proteccion_oficial">Vivienda protección oficial</string>
+    <string name="label_precio_vivienda">¿Precio de la vivienda?</string>
+    <string name="label_cantidad_abonada">¿Cantidad abonada por el comprador?</string>
+    <string name="label_plazo_prestamo_a_pagar">¿Plazo a pagar de préstamo? (en años)</string>
+    <string name="label_fecha_inicio_hipoteca">¿Fecha de inicio de la hipoteca?</string>
+    <string name="label_año_hipoteca_actual">¿Año de hipoteca actual?</string>
+    <string name="label_mes_actual">¿Mes de hipoteca actual?</string>
+    <string name="label_informar_problema">Notificar problema</string>
+    <string name="label_has_detectado">¿Has detectado algún fallo que quieras que solucionemos o quieres sugerirnos cualquier mejora?</string>
+    <string name="label_comentanoslo">¡COMÉNTANOSLO!</string>
+    <string name="label_texto_error">Escribe aquí lo que quieras \ndecirnos...</string>
+    <string name="label_aniadir_captura">Añade captura (recomendado) </string>
+    <string name="label_filtros">Filtros</string>
+    <string name="label_precio_vivienda_sin">Precio de la vivienda</string>
+    <string name="label_primer_pago">Primer pago</string>
+    <string name="label_plazo_prestamo_a_pagar_sin">Plazo a pagar de préstamo</string>
+    <string name="label_hipoteca_fija">Hipoteca fija</string>
+    <string name="label_hipoteca_variable">Hipoteca variable</string>
+    <string name="label_hipoteca_mixta">Hipoteca mixta</string>
+    <string name="label_check_parte_fija_variab">Hipoteca mixta</string>
+    <string name="label_tipo_hipoteca">Tipo de hipoteca</string>
+    <string name="label_vinculaciones">Vinculaciones</string>
+    <string name="label_seguro_vida">Seguro de vida</string>
+    <string name="label_seguro_hogar">Seguro del hogar</string>
+    <string name="label_cuenta_nomina">Cuenta nómina</string>
+    <string name="label_plan_pensiones">Plan de pensiones</string>
+    <string name="label_comisiones_no">Comisiones que no quieres</string>
+    <string name="label_comision_apertura">Comisión por apertura</string>
+    <string name="label_comision_gastos_formalizacion">Comisión por gastos de formalizacion</string>
+    <string name="label_comision_subrogacion">Comisión por subrogación</string>
+    <string name="label_comision_estudio_gestion">Comisión por estudio y gestión</string>
+    <string name="label_comision_amortizacion_anticipada">Comisión por amortización anticipada</string>
+    <string name="label_comision_cancelacion">Comisión por cancelación</string>
+    <string name="label_bancos">Bancos</string>
+    <string name="label_banco">Banco asociado</string>
+    <string name="label_pasate_premium">¡Pásate a premium!</string>
+    <string name="label_indicar_correo_recuperar_contra">Indica tu correo electrónico para recuperar la contraseña</string>
+    <string name="label_plan_actual">Tu plan actual</string>
+    <string name="label_ventajas_premium_1">Desbloquea las ventajas que proporciona el plan premium</string>
+    <string name="label_ventajas_premium_2">Realiza el seguimiento de tus hipotecas sin límites</string>
+    <string name="label_ventajas_premium_3">Desbloquea la opción de ayudas gráficas para comprender la evolución de tu hipoteca</string>
+    <string name="label_plan_premium">Mi HipotecaApp Premium</string>
+    <string name="label_info_premium">Sin anuncios. Lleva el seguimiento de más de una hipoteca: mayor número y diversidad de datos, gráficos individuales, y mucho más...</string>
+    <string name="label_coste_premium_tachado">5.95€</string>
+    <string name="label_coste_premium_rebajado">2.95€</string>
+    <string name="label_cierre_sesion">Cerrar sesión</string>
+    <string name="label_porcentaje_fijo">Porcentaje fijo (TIN)</string>
+    <string name="label_duracion_primer_porcentaje">Duración del primer porcentaje aplicado (en meses)</string>
+    <string name="label_check_parte_fija_mixta">¿Su hipoteca tiene una primera parte fija?</string>
+    <string name="label_porcentaje_variable_diferencial">Diferencial</string>
+    <string name="label_cada_cuanto_revision">¿Cuando se realiza la revisión para actualizar con el euribor?</string>
+    <string name="label_primer_porcentaje_variable">Primer porcentaje aplicado</string>
+    <string name="label_seis_meses">6 meses</string>
+    <string name="label_un_anio">1 año</string>
+    <string name="label_cuantos_anios_fijo">¿Cuántos años son fijos en la hipoteca?</string>
+    <string name="label_gastos">GASTOS</string>
+    <string name="label_explicacion_gastos">Indica los gastos que tienes que pagar, en caso de no tener que pagar nada introduce 0.</string>
+    <string name="label_notaria">Gastos notaría</string>
+    <string name="label_gastos_totales">Gastos totales</string>
+    <string name="label_gastos_registro">Gastos registro</string>
+    <string name="label_gestoria">Gastos gestoría</string>
+    <string name="label_tasacion">Gastos tasación</string>
+    <string name="label_comisiones">Comisiones</string>
+    <string name="label_gastos_vinculaciones">Vinculaciones anuales</string>
+    <string name="label_nombre_hipoteca">Nombre de la hipoteca</string>
+    <string name="label_comparador_hipotecas">Comparador de hipotecas</string>
+    <string name="label_tipo_de_vivienda">¿Qué tipo de vivienda va a ser?</string>
+    <string name="label_viv_nueva_seg_mano">¿Vivienda nueva o de segunda mano?</string>
+    <string name="label_viv_nueva">Vivienda nueva</string>
+    <string name="label_viv_seg_mano">Vivienda de segunda mano</string>
+    <string name="label_seguimiento">Seguimiento</string>
+    <string name="label_tipo_de_hipoteca">Tipo de Hipoteca: </string>
+    <string name="label_dinero_que_falta_por_pagar">Dinero a pagar:</string>
+    <string name="label_tiempo_restante">Tiempo restante:</string>
+    <string name="label_cuota_de">CUOTA DE </string>
+    <string name="label_ingresos">Ingresos mensuales:</string>
+    <string name="label_ofertas_con_detalle">Obtener mejores ofertas con detalle</string>
+    <string name="label_cuota">CUOTA</string>
+    <string name="ip">http://147.96.81.245:5000</string>
+
+    <!-- MENSAJES DE ERROR -->
+    <string name="correo_en_bd">El correo introducido ya está registrado</string>
+    <string name="necesario_aceptar_terminos">Acepta los términos y condiciones para poder registrarte</string>
+    <string name="nombre_vacio">Es necesario introducir un nombre</string>
+    <string name="correo_vacio">Es necesario introducir un correo eléctronico</string>
+    <string name="contra_vacia">Es necesario introducir una contraseña</string>
+    <string name="contras_no_coinciden">Las contraseñas no coinciden</string>
+    <string name="correo_no_existente">El correo introducido no está registrado</string>
+    <string name="correo_incorrecto">El correo introducido no es correcto</string>
+    <string name="contra_incorrecta">La contraseña es incorrecta</string>
+    <string name="completar_campos">Completa todos los campos!</string>
+    <string name="formato_correo_incorrecto">El correo formato del correo introducido no es correcto</string>
+    <string name="error_enviar_mensaje_recuperar_contra">No se pudo enviar un correo electrónico para restablecer su contraseña</string>
+    <string name="comunidad_vacia">Debes seleccionar una comunidad</string>
+    <string name="precio_vacio">El campo precio vivienda no puede estar vacío</string>
+    <string name="cantidad_abonada_vacio">El campo cantidad abonada no puede estar vacío</string>
+    <string name="plazo_vacio">El campo plazo no puede estar vacío</string>
+    <string name="ingresos_vacio">El campo ingresos no puede estar vacío</string>
+    <string name="cantidad_mayor_igual_cero">La cantidad debe ser mayor que 0</string>
+    <string name="precio_menor_abonado">El precio de la vivienda debe ser mayor que la cantidad abonada</string>
+    <string name="porcentaje_mayor_igual_cero">El porcentaje debe ser mayor que 0</string>
+    <string name="duracion_mayor_igual_cero">La duracion debe ser mayor que 0</string>
+    <string name="plazo_menor_mayor">El campo plazo debe estar entre 1 y 40</string>
+    <string name="anio_actual_vacio">El campo año actual no puede estar vacío</string>
+    <string name="nombre_hipoteca_vacio">El campo nombre hipoteca no puede estar vacío</string>
+    <string name="porcentaje_vacio">Los porcentajes no pueden estar vacíos</string>
+    <string name="duracion_vacio">El campo duración no puede estar vacío</string>
+    <string name="anios_mayor_cero">El campo duración no puede ser menor o igual a 0</string>
+    <string name="ahorro_mayor_80_por_ciento">La cantidad financiada por el banco no puede ser mayor al 80% del precio de la vivienda.</string>
+    <string name="anios_menor_plazo">El campo duración no puede ser mayor o igual que el plazo de la hipoteca</string>
+    <string name="meses_menor_plazo">Los meses de este campo pueden ser como maximo el numero de cuotas menos el ultimo año</string>
+    <string name="no_puede_amortizar">No se puede amortizar debido a que ya solo queda una cuota</string>
+    <string name="no_puede_amortizar_fin">No se puede amortizar debido a que la hipoteca ya ha finalizado</string>
+    <string name="amortizacion_existente">Ya existe una amortización para la siguiente cuota</string>
+    <string name="precio_aportado_insuficiente">El dinero aportado tiene que ser del 20% respecto al precio de la vivienda</string>
+    <string name="anios_superados">Los años no pueden ser superiores a 30 años</string>
+
+    <!-- MENSAJES DE EXITO -->
+    <string name="usuario_creado_exito">Usuario creado con éxito!</string>
+    <string name="sesion_cerrada">Sesión cerrada</string>
+    <string name="mensaje_enviado_recuperar_contra">Se ha enviado un correo electrónico para restablecer su contraseña</string>
+    <string name="hipoteca_seguimiento_exito">Hipoteca creada con éxito!</string>
+    <string name="hipoteca_seguimiento_borrada_exito">Hipoteca borrada con éxito!</string>
+    <string name="vinculaciones_actualizdas">Vinculaciones anuales añadidas con éxito!</string>
+    <string name="hipoteca_seguimiento_editada_exito">Hipoteca editada con éxito!</string>
+    <string name="amortizacion_anticipada_exito">Amortización anticipada creada con éxito!</string>
+    <string name="usuario_borrado_exito">Usuario borrado con éxito!</string>
+
+    <string name="label_texto_acerca_de">¡Bienvenido/a a nuestra aplicación de seguimiento y comparación de hipotecas! Aquí en MiHipoteca App, entendemos que la compra de una vivienda es una de las decisiones financieras más importantes que tomarás en la vida, por lo que queremos ayudarte a tomar la mejor decisión posible.\n
+
+Nuestra aplicación es una herramienta de comparación de hipotecas que te permite comparar las tasas de interés y los términos de diferentes prestamistas para que puedas encontrar la hipoteca que mejor se adapte a tus necesidades. Con nuestra aplicación, puedes ahorrar tiempo y esfuerzo al evitar tener que visitar a cada prestamista individualmente y rellenar múltiples solicitudes.\n
+
+Nos enorgullece ofrecer una plataforma fácil de usar que te ayuda a comparar diferentes hipotecas y encontrar la que mejor se adapte a tus necesidades financieras. En MiHipoteca App, nuestra misión es proporcionarte las herramientas y la información que necesitas para tomar la mejor decisión financiera para ti y tu familia. Queremos ayudarte a navegar por el complejo mundo de las hipotecas
+y hacer que el proceso de compra de una vivienda sea lo más sencillo posible. Gracias por confiar en nosotros para ayudarte en tu búsqueda de la hipoteca perfecta. Si tienes alguna pregunta, no dudes en ponerte en contacto con nuestro equipo de soporte en cualquier momento. Estamos aquí para ayudarte.</string>
+    <string name="label_texto_pol_privacidad">En MiHipoteca App, nos tomamos muy en serio la privacidad de nuestros usuarios. Creemos que la transparencia es clave para construir una relación de confianza con nuestros clientes. Por eso, queremos explicar en detalle cómo manejamos y protegemos tus datos personales.\n
+
+Recopilación y uso de información personal:\n
+Cuando te registras en nuestra aplicación, solicitamos información personal que puede incluir tu nombre, dirección de correo electrónico y otra información relevante. Esta información se utiliza para crear una cuenta de usuario y para proporcionarte servicios personalizados. Nunca compartiremos tu información personal con terceros sin tu consentimiento expreso.\n
+
+Seguridad de los datos:\n
+Tomamos medidas de seguridad para proteger tus datos personales de cualquier acceso no autorizado, pérdida o divulgación. Utilizamos medidas de seguridad físicas, electrónicas y administrativas para proteger tus datos personales. Sin embargo, ningún método de transmisión de datos a través de internet o almacenamiento electrónico es 100% seguro, por lo que no podemos garantizar la seguridad absoluta de tus datos personales.\n
+
+Tus derechos de privacidad:\n
+Tienes derecho a acceder, modificar, corregir y eliminar tus datos personales en cualquier momento. También puedes solicitar que dejemos de utilizar tus datos personales para fines publicitarios. Si deseas ejercer cualquiera de estos derechos, ponte en contacto con nuestro equipo de soporte.\n
+
+Cambios en la política de privacidad:\n
+Nos reservamos el derecho de actualizar esta política de privacidad en cualquier momento. Te recomendamos que revises esta página periódicamente para estar al tanto de cualquier cambio.\n
+
+En MiHipoteca App, nos tomamos en serio la protección de tu privacidad y nos comprometemos a proteger tus datos personales. Si tienes alguna pregunta o preocupación sobre nuestra política de privacidad, no dudes en ponerte en contacto con nuestro equipo de soporte.</string>
+
+<string name="label_texto_terminos">
+Bienvenido a MiHipoteca App. Estos términos y condiciones de uso ("Términos") establecen los términos y condiciones legales para el uso de la aplicación móvil MiHipoteca App ("la Aplicación") y los servicios relacionados ofrecidos por nosotros. Al utilizar la Aplicación, usted acepta cumplir con estos Términos en su totalidad. Si no está de acuerdo con alguno de los Términos, no utilice la Aplicación.
+
+\nUso de la Aplicación
+\n\n - 1.1. MiHipoteca App es una aplicación móvil diseñada para ayudar a los usuarios a comparar y realizar un seguimiento de distintas opciones de hipoteca ofrecidas por diferentes bancos.
+\n\n - 1.2. Usted reconoce y acepta que la información proporcionada en la Aplicación es solo con fines informativos y no constituye asesoramiento financiero o legal. No nos responsabilizamos por ninguna decisión tomada basada en la información proporcionada por la Aplicación.
+
+\nPrivacidad
+\n\n - 2.1. Respetamos su privacidad y nos comprometemos a proteger sus datos personales. Consulte nuestra Política de Privacidad para obtener información detallada sobre cómo recopilamos, utilizamos y protegemos su información personal.
+
+\nPropiedad Intelectual
+\n\n - 3.1. La Aplicación y todo su contenido, incluyendo pero no limitado a textos, gráficos, imágenes, logotipos y nombres comerciales, están protegidos por derechos de propiedad intelectual y son propiedad exclusiva de MiHipoteca App.
+\n\n - 3.2. No se le otorga ningún derecho o licencia para utilizar la propiedad intelectual de MiHipoteca App sin nuestro consentimiento previo y por escrito.
+
+\nLimitación de Responsabilidad
+\n\n - 4.1. Usted utiliza la Aplicación bajo su propio riesgo. MiHipoteca App no se hace responsable por cualquier daño directo, indirecto, incidental, especial, consecuente o punitivo que pueda surgir del uso o la incapacidad de utilizar la Aplicación.
+\n\n - 4.2. La Aplicación puede contener enlaces a sitios web de terceros. No nos hacemos responsables por el contenido, la exactitud o las prácticas de privacidad de dichos sitios web.
+
+\nModificaciones y Terminación
+\n\n - 5.1. Nos reservamos el derecho de modificar o discontinuar la Aplicación, total o parcialmente, en cualquier momento y sin previo aviso.
+\n\n - 5.2. Podemos modificar estos Términos en cualquier momento. Los cambios entrarán en vigencia inmediatamente después de su publicación en la Aplicación. Es su responsabilidad revisar periódicamente estos Términos para estar al tanto de las modificaciones.
+
+\nLey Aplicable
+\n\n - 6.1. Estos Términos se regirán e interpretarán de acuerdo con las leyes vigentes en el lugar donde se encuentre MiHipoteca App.
+
+\nSi tiene alguna pregunta o inquietud sobre estos Términos, contáctenos a través de la sección de notificar problema de la Aplicación.
+
+\nGracias por utilizar MiHipoteca App. Esperamos que encuentre útil nuestra aplicación y que le ayude en su búsqueda de la mejor opción hipotecaria.
+</string>
+
+<string name="txt_correo">Correo</string>
+<string name="txt_pass">Contraseña</string>
+<string name="txt_text">Hola</string>
+<string name="dialog_message">¿Estás seguro de eliminar la cuenta?</string>
+<string name="dialog_title">ELIMINAR CUENTA</string>
+<string name="si_eliminar_cuenta">Si</string>
+<string name="no_eliminar_cuenta">No</string>
+
+</resources>

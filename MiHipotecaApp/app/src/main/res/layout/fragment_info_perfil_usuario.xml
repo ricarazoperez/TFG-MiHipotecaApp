@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".UsuarioRegistrado.InformacionUsuario.InfoPerfilUsuario"
+    android:background="@color/background_aplicacion">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="32dp"
+          android:layout_weight="1"
+          android:fontFamily="@font/text_bold"
+          android:textColor="@color/titulo2"
+          android:shadowColor="@color/dark_blue"
+          android:shadowDx="3"
+          android:shadowDy="3"
+          android:shadowRadius="3"
+          android:text="@string/label_configuracion_usuario"
+          android:textSize="32dp"
+          />
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/imagen_perfil_usuario"
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="16dp"
+          android:layout_weight="1"
+          />
+
+  </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_modificar_datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/editar_perfil"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/text_color"
+            android:text="@string/label_modificar_perfil"
+            android:fontFamily="@font/text_bold"
+            android:textSize="25dp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/baseline_arrow_forward_ios_24"
+            />
+
+
+
+    </LinearLayout>
+
+
+  <LinearLayout
+      android:id="@+id/btn_pasar_a_premium"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_marginTop="16dp"
+      >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/premium"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/text_bold"
+        android:textColor="@color/text_color"
+        android:layout_marginStart="8dp"
+        android:text="@string/label_pasar_premium"
+        android:textSize="25dp"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/baseline_arrow_forward_ios_24"
+        />
+
+  </LinearLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="5dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:background="@drawable/barra_horizontal"
+      />
+  <LinearLayout
+      android:id="@+id/btn_notificar_problema"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_marginTop="24dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/notificar_problema"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/text_bold"
+        android:layout_marginStart="8dp"
+        android:text="@string/label_notificar_problema"
+        android:textSize="25dp"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/baseline_arrow_forward_ios_24" />
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/btn_acercaDe"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_marginTop="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/acercade" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/text_color"
+        android:text="@string/label_acercaDe"
+        android:fontFamily="@font/text_bold"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/baseline_arrow_forward_ios_24" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/btn_pol_privacidad"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_marginTop="16dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/privacidad"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/text_color"
+        android:text="@string/label_pol_privacidad"
+        android:fontFamily="@font/text_bold"
+        android:textSize="25dp"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/baseline_arrow_forward_ios_24"
+        />
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="5dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:background="@drawable/barra_horizontal"
+      />
+
+  <LinearLayout
+      android:id="@+id/cerrar_sesion"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_marginTop="16dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/logout_icon"
+
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:layout_marginStart="8dp"
+        android:text="@string/label_cierre_sesion"
+        android:fontFamily="@font/text_bold"
+        android:textSize="25dp"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/baseline_arrow_forward_ios_24"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/eliminar_cuenta"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_marginTop="16dp"
+      android:layout_marginBottom="24dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/eliminar_cuenta"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:textColor="@color/text_color"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/label_eliminar_usuario"
+        android:fontFamily="@font/text_bold"
+        android:textSize="25dp"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/baseline_arrow_forward_ios_24"
+        />
+  </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
